@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  /* color: aliceblue; */
+}
+.header-image{
+  overflow: hidden;
+  position: relative;
+}
+.main-page {
+  width: 600px;
+  margin: 30px;
+  border-radius: 10px;
+  background: url(images/background.jpg);
+  color: aliceblue;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  margin: 20px auto;
+}
+.signup-form {
+  width: 500px;
+  margin: 40px auto;
+}
+.company-title {
+ position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin: 30px;
+  padding: 10px;
+  color: aliceblue;
+}
+.signup-heading {
+  font-size: 2.2rem;
+  text-align: center;
+  margin: 20px;
+}
+.form-label {
+  margin-left: 25px;
+}
+/* .valid-feedback, .invalid-feedback{
+    display: block;
+} */
+.invalid-feedback {
+  color: red;
+  margin-left: 20px;
+}
+.checkbox-feedback {
+  margin-left: -6px;
+}
+.valid-feedback {
+  /* color: green; */
+  margin-left: 20px;
+}
+.submit-btn {
+  text-align: end;
+}
+.navbar a{
+    color: aliceblue;
+}
+.navbar a:hover{
+    color: gray;
+}
+.footer{
+  text-align: center;
+}
+.footer .block2 i{
+  font-size: 2rem;
+}
+.footer .block2{
+  margin: 10px auto;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 600px) {
+    .navbar {
+      
+      width: 100%;
+    }
+  }

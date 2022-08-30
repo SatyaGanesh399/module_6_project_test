@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+            <script src="https://kit.fontawesome.com/c4fa3099a6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!------------------------------- Navbar ------------------------------------------>
+
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Compaq</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Account</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menu
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Laptops</a></li>
+                      <li><a class="dropdown-item" href="#">Monitors</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Accessroes</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Contat Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+        <!------------------------------- Navbar ------------------------------------------>
+        <div class="header-image">
+            <img src="images/top bar.jpg" alt="" height="500px" width="1700px">
+        </div>
+        <div class="company-title">
+            <h2>Welcome to Compaq</h2>
+            <p>Where dreams meets design</p>
+            
+        </div>
+        
+
+        <!------------------------------------------- Header text --------------------------------------------->
+        <div class="container-fluid main-page">
+            
+
+        <!------------------------------------------- Header text --------------------------------------------->
+
+        <!------------------------------------------- Signup form --------------------------------------------->
+            <div class="signup-form">
+                <h3 class="signup-heading" id="signup-heading">Sign Up Form</h3>
+                <form class="row g-3 needs-validation" novalidate id="signUp-form">
+                    
+                    <!-- First Name -->
+                    <div class="col-md-6">
+                        <label for="first-name" class="form-label">First
+                            name</label>
+                        <input type="text" class="form-control"
+                            id="first-name" placeholder="First Name" autocomplete="off">
+                        <div class="valid-feedback" id="firstName-valid">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback" id="firstName-invalid">
+                            please enter a valid first name.
+                        </div>
+                    </div>
+                    <!-- First Name -->
+                    <!-- Last Name -->
+                    <div class="col-md-6">
+                        <label for="last-name" class="form-label">Last
+                            name</label>
+                        <input type="text" class="form-control"
+                            id="last-name" placeholder="Last Name" autocomplete="off">
+                        <div class="valid-feedback" id="lastName-valid">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback" id="lastName-invalid">
+                            please enter a valid last name.
+                        </div>
+                    </div>
+                    <!-- Last Name -->
+
+                    <!-- User email ID -->
+                    <div class="col-md-6">
+                        <label for="userName-input"
+                            class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text"
+                                id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control"
+                                id="userName-input" placeholder="@email.com"
+                                aria-describedby="inputGroupPrepend" autocomplete="off">
+                            <div class="invalid-feedback" id="email-invalid">
+                                Please enter a valid email.
+                            </div>
+                            <div class="valid-feedback" id="email-valid">
+                                Looks good!
+                            </div>
+                        </div>
+                    </div>
+                    <!-- User email ID -->
+                    <!-- User Phone Number -->
+                    <div class="col-md-6">
+                        <div class="input-group has-validation ">
+                            <label for="phone-number" class="form-label">Phone Number</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text"
+                                    id="inputGroupPrepend">+91</span>
+                                <input type="text" class="form-control"
+                                    id="phone-number"
+                                    aria-describedby="inputGroupPrepend" autocomplete="off">
+                                <div class="invalid-feedback" id="phoneNumber-invalid">
+                                    Please enter a valid phone number.
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    <!-- User Phone Number -->
+
+                    <!-- Batch no -->
+                    <div class="col-md-6">
+                        <label for="batch-no" class="form-label">Batch No.</label>
+                            <select name="batchNo" id="batch-no" class="form-select" >
+                                <option value="none" selected disabled>Select Batch No...</option>
+                                <option value= "1" >1</option>
+                                <option value= "2" >2</option>
+                                <option value= "3" >3</option>
+                                </select>
+                        </select>
+                        <div class="invalid-feedback" id="batch-invalid">
+                            Please select a valid batch no.
+                        </div>
+                    </div>
+                    <!-- Batch no -->
+                    <!-- module no -->
+                    <div class="col-md-6">
+                        <label for="module-no" class="form-label">Module No.</label>
+                            <select name="moduleNo" id="module-no" class="form-select" >
+                                <option value="none" selected disabled>Select Module No...</option>
+                                <option value= "5" >5</option>
+                                <option value= "6" >6</option>
+                                <option value= "7" >7</option>
+                                </select>
+                        </select>
+                        <div class="invalid-feedback" id="module-invalid">
+                            Please select a valid Module no.
+                        </div>
+                    </div>
+                    <!-- Batch no -->
+                    <!-- TnC -->
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                                value="" id="checkBox-input">
+                            <label class="form-check-label" for="checkBox-input">
+                                Agree to terms and conditions
+                            </label>
+                            <div class="invalid-feedback  checkbox-feedback" id="checkBox-invalid">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TnC -->
+                    <div class="col-12 submit-btn">
+                        <button class="btn btn-dark" type="button" id="submit-button">Submit
+                            form</button>
+                    </div>
+                </form>
+            </div>
+
+            <!------------------------------------------- Signup form --------------------------------------------->
+
+        </div>
+        <!------------------------------------------- footer --------------------------------------------->
+        <div class="footer">
+            <div class="block1">
+                Question ? call 000-08745-151-111
+                <h1>Compaq</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum non hic ad porro totam corporis eos praesentium architecto quasi sed rem illum quo obcaecati magni aperiam, quisquam doloribus vitae mollitia ea culpa fuga? Quidem expedita nobis ab et ducimus impedit animi modi, suscipit laudantium, nostrum enim minima perferendis maxime architecto.</p>
+            </div>
+            <div class="block2">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-solid fa-barcode"></i>
+                <i class="fa-solid fa-at"></i>
+            </div>
+            <div class="block3">
+                Made by Satya
+            </div>
+        </div>
+        <!------------------------------------------- footer --------------------------------------------->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
