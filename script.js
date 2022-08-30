@@ -126,6 +126,7 @@ function reset(){
     document.getElementById('module-invalid').style.display = 'none'
     document.getElementById('phoneNumber-invalid').style.display = 'none'
     document.getElementById('checkBox-invalid').style.display = 'none'
+    document.getElementById('checkBox-input').checked = false
 
     // input- blank
     document.getElementById("first-name").value = ""
